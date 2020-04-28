@@ -23,10 +23,10 @@ function randomSquare() {
 
  // if hit with mouse on mole gerenerate a scor e 
 square.forEach(id => {
-     id.addEventListener('mouseup', () => {
-         if(id.id === hitposition){
+     id.addEventListener('click', () => {
+         if(id.id === hitPosition){
              result+=1;
-             score.textContent =  result;
+             score.textContent = result;
          } 
      });
 });
@@ -34,7 +34,7 @@ square.forEach(id => {
 function moveMole() {
     
     let timerId = null;
-    timerId = setInterval(randomSquare,1000);
+    timerId = setInterval(randomSquare,710);
 }
 //reducing time
 function countDown(){
